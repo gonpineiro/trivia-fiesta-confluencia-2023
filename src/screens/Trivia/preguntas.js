@@ -21,8 +21,10 @@ const preguntas = {
 
         color: '#7b30d1',
 
-        description:
-            'La línea 107 es el Sistema de Emergencias Médicas de Neuquén (SIEN) .\n\nLa línea 108 es Atención y Asistencia a Víctimas de Violencia de Genero.\n',
+        description: [
+            'La línea 107 es el Sistema de Emergencias Médicas de Neuquén (SIEN) .',
+            'La línea 108 es Atención y Asistencia a Víctimas de Violencia de Genero.'
+        ]
     },
 
     dos: {
@@ -47,7 +49,7 @@ const preguntas = {
         color: '#ff4e83',
 
         description:
-            'La Subsecretaría de Ciudades Saludables de la Secretaría de Ciudadanía cuenta con 6 quirófanos para castraciones de animales no humanos, 2 de ellos son móviles para operativos de castración en los barrios.',
+            ['La Subsecretaría de Ciudades Saludables de la Secretaría de Ciudadanía cuenta con 6 quirófanos para castraciones de animales no humanos, 2 de ellos son móviles para operativos de castración en los barrios.']
     },
 
     tres: {
@@ -72,7 +74,7 @@ const preguntas = {
         color: '#21d1ae',
 
         description:
-            'NOSE',
+            ['NOSE'],
     },
 };
 

@@ -1,11 +1,27 @@
+$windowWidth: 800px;
+$windowHeight: 1280px;
+
 @font-face {
     font-family: 'fuente_01';
     src: url('../assets/fonts/UniversLTStd.ttf');
 }
 
-body {
-    font-family: 'fuente_01';
-    margin: 0;
+html {
+    height: $windowHeight;
+    width: $windowWidth;
+
+    body {
+        font-family: 'fuente_01';
+        margin: 0;
+
+        height: $windowHeight;
+        width: $windowWidth;
+
+        #root {
+            height: $windowHeight;
+            width: $windowWidth;
+        }
+    }
 }
 
 .btn_inicio {
@@ -17,6 +33,8 @@ body {
     position: absolute;
     top: 733px;
     left: 138px;
+
+    cursor: pointer;
 }
 
 .main_fondo {
@@ -24,18 +42,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1280px;
-    width: 800px;
+    height: $windowHeight;
+    width: $windowWidth;
 }
 
-$widthQuest: 544px;
+$widthQuest: 560px;
 .quest {
     background-image: url('../assets/img/fondo-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1280px;
-    width: 800px;
+    height: $windowHeight;
+    width: $windowWidth;
 
     display: flex;
     flex-direction: column;
@@ -50,6 +68,7 @@ $widthQuest: 544px;
     }
 
     .btn_opcion {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,18 +77,53 @@ $widthQuest: 544px;
         height: 150px;
         color: white;
 
+        margin-bottom: 25px;
+        border-radius: 50px;
+    }
+
+    .btn_siguente {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        width: 450px;
+        height: 150px;
+        color: white;
+
+        margin-bottom: 200px;
+        border-radius: 50px;
+    }
+
+    .btn_shadow {
         -webkit-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
         box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+    }
 
-        margin-bottom: 25px;
-        border-radius: 50px;
+    .quest_des_container {
+        height: $windowHeight;
+        width: $windowWidth;
 
-        .btn_shadow {
-            -webkit-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
-            box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quest_descripcion {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $widthQuest;
+        font-weight: bold;
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 0px;
+
+        text-align: justify;
     }
 }
 
@@ -84,10 +138,12 @@ $widthQuest: 544px;
 
     span {
         display: flex;
+        font-size: 45px;
         justify-content: center;
         align-items: center;
         height: auto;
-        padding: 0px 38.3px;
+        font-weight: bold;
+        padding: 0px 38px;
     }
 
     p {
