@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'fuente_01';
+    src: url('../assets/fonts/UniversLTStd.ttf');
+}
+
+body {
+    font-family: 'fuente_01';
+    margin: 0;
+}
+
+.btn_inicio {
+    height: 162px;
+    width: 524px;
+    background-image: url('../assets/img/boton-iniciar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 733px;
+    left: 138px;
+}
+
+.main_fondo {
+    background-image: url('../assets/img/fondo-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1280px;
+    width: 800px;
+}
+
+$widthQuest: 544px;
+.quest {
+    background-image: url('../assets/img/fondo-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1280px;
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .line {
+        height: 4px;
+        width: $widthQuest;
+        position: relative;
+        top: 0px;
+        margin-bottom: 130px;
+    }
+
+    .btn_opcion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        width: 450px;
+        height: 150px;
+        color: white;
+
+        -webkit-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+        box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+
+        margin-bottom: 25px;
+        border-radius: 50px;
+
+        .btn_shadow {
+            -webkit-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+            box-shadow: -8px 10px 26px 3px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+.quest_container {
+    font-size: 25px;
+    color: white;
+    display: flex;
+    padding-top: 200px;
+    width: $widthQuest;
+
+    /* border-bottom: 2px solid #7b30d1; */
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0px 38.3px;
+    }
+
+    p {
+        margin: 0 0 0 25px;
+        display: flex;
+        align-items: center;
+    }
+}
