@@ -1,38 +1,74 @@
 {
-  "name": "trivia-fiesta-confluencia",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "12.1.3",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "trivia-fiesta-confluencia",
+    "version": "0.1.0",
+    "author": "gonpineiro",
+    "description": "trivia.fiesta",
+    "homepage": "./",
+    "main": "public/electron.js",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.16.2",
+        "@testing-library/react": "12.1.3",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+        "package": "npm run build && electron-builder build --win -c.extraMetadata.main=build/electron.js --publish never",
+        "publish": "npm run build && electron-builder build --win --publish always",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "build": {
+        "mac": {
+            "publish": {
+                "provider": "github",
+                "owner": "Github Owner",
+                "repo": "Repository Name",
+                "private": true,
+                "token": ""
+            }
+        },
+        "win": {
+            "publish": {
+                "provider": "github",
+                "owner": "Github Owner",
+                "repo": "Repository Name",
+                "private": true,
+                "token": ""
+            }
+        },
+        "files": [
+            "build/**/*",
+            "node_modules/**/*"
+        ],
+        "publish": {
+            "provider": "github",
+            "private": true,
+            "owner": "Github Owner"
+        }
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            "last 1 electron version"
+        ],
+        "development": [
+            "last 1 electron version"
+        ]
+    },
+    "devDependencies": {
+        "electron": "^23.0.0",
+        "electron-builder": "^23.6.0"
+    }
 }
