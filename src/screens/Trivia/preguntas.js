@@ -66,6 +66,28 @@ const preguntas = {
         description:
             ['Podes encontrarla en Play Store y App Store como COLE NEUQUÉN'],
     },
+
+    cuatro: {
+        number: 4,
+        quest: '¿Cómo pódes pagar tus impuestos?',
+        respuestas: [
+            {
+                respuesta: 'Por la web',
+            },
+            {
+                respuesta: 'Whatsapp',
+            },
+            {
+                respuesta: 'Todas las anteriores',
+            },
+        ],
+        correcta: 'Todas las anteriores',
+
+        color: '#fc620a',
+
+        description:
+            ['Ingresando en www.neuquencapital.gov.ar pódes conocer todos los medios de pago.'],
+    },
 };
 
 export default preguntas

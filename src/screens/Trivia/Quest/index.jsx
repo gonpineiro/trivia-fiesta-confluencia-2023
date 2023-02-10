@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import preguntas from '../preguntas';
 
 const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
     /* o - Opciones || d - Descripcion  || f - Finalizado*/
     const [state, setState] = useState('o');
 
     const handlerContinuar = () => {
-        if (preg.number === 3) {
+        if (preg.number >= Object.keys(preguntas).length) {
             setState('f');
         } else {
             setState('o');
@@ -16,7 +17,7 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
 
     const selectOp = () => {
         resetCount();
-        setState('d')
+        setState('d');
     };
 
     return (
