@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Quest = ({ pregunta: preg, back, continuar }) => {
+const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
     /* o - Opciones || d - Descripcion  || f - Finalizado*/
     const [state, setState] = useState('o');
 
@@ -11,6 +11,12 @@ const Quest = ({ pregunta: preg, back, continuar }) => {
             setState('o');
             continuar();
         }
+        resetCount();
+    };
+
+    const selectOp = () => {
+        resetCount();
+        setState('d')
     };
 
     return (
@@ -27,8 +33,7 @@ const Quest = ({ pregunta: preg, back, continuar }) => {
                         <span
                             className="btn_opcion btn_shadow"
                             style={{ backgroundColor: preg.color }}
-                            id={r.esCorrecta}
-                            onClick={() => setState('d')}
+                            onClick={selectOp}
                         >
                             {r.respuesta}
                         </span>
@@ -38,21 +43,29 @@ const Quest = ({ pregunta: preg, back, continuar }) => {
 
             {state === 'd' && (
                 <>
-                    (
                     <div className="quest_des_container">
+                        <p className="quest_descripcion quest_correcta">
+                            Respuesta correcta: {preg.correcta}
+                        </p>
                         {preg.description.map((e) => (
-                            <p className="quest_descripcion">{e}</p>
+                            <p className="quest_descripcion"> * {e}</p>
                         ))}
+                        <span className="quest_descripcion_img"></span>
                     </div>
                     <span
                         className="btn_siguente btn_shadow"
                         style={{ backgroundColor: preg.color }}
                         onClick={handlerContinuar}
                     >
-                        Siguete
+                        Siguiente
                     </span>
-                    )
                 </>
+            )}
+
+            {state === 'f' && (
+                <div className="quest_fin">
+                    <span className="btn_volver" onClick={back}></span>
+                </div>
             )}
         </div>
     );

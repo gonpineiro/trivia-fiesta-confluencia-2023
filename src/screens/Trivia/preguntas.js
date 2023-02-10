@@ -5,19 +5,15 @@ const preguntas = {
         respuestas: [
             {
                 respuesta: '107',
-                esCorrecta: false,
             },
             {
                 respuesta: '108',
-                esCorrecta: false,
             },
             {
                 respuesta: '147',
-                esCorrecta: true,
             },
         ],
         correcta: '147',
-        variant: 'blue',
 
         color: '#7b30d1',
 
@@ -29,19 +25,16 @@ const preguntas = {
 
     dos: {
         number: 2,
-        quest: '¿La línea 108 es Atención y Asistencia a Víctimas de Violencia de Genero.',
+        quest: '¿La línea 108 es Atención y Asistencia a Víctimas de Violencia de Genero?',
         respuestas: [
             {
                 respuesta: 'Castración',
-                correcta: true,
             },
             {
                 respuesta: 'Perrera',
-                correcta: false,
             },
             {
                 respuesta: 'Desparasitación',
-                correcta: false,
             },
         ],
         correcta: 'Castración',
@@ -58,15 +51,12 @@ const preguntas = {
         respuestas: [
             {
                 respuesta: 'SUBE',
-                correcta: false,
             },
             {
                 respuesta: 'COLE',
-                correcta: true,
             },
             {
                 respuesta: 'GoogleMaps',
-                correcta: false,
             },
         ],
         correcta: 'COLE',
@@ -74,7 +64,7 @@ const preguntas = {
         color: '#21d1ae',
 
         description:
-            ['NOSE'],
+            ['Podes encontrarla en Play Store y App Store como COLE NEUQUÉN'],
     },
 };
 

@@ -3,10 +3,13 @@ import { useState } from 'react';
 import preguntas from './preguntas';
 import Quest from './Quest';
 
-const Trivia = ({ setScreen }) => {
+const Trivia = ({ setScreen, resetCount }) => {
     const [quest, setQuest] = useState('uno');
 
-    const back = () => setScreen('inicio');
+    const back = () => {
+        resetCount();
+        setScreen('inicio');
+    };
 
     const continuar = () => {
         if (quest === 'uno') setQuest('dos');
@@ -15,7 +18,13 @@ const Trivia = ({ setScreen }) => {
     };
 
     return (
-        <Quest pregunta={preguntas[quest]} setQuest={setQuest} back={back} continuar={continuar} />
+        <Quest
+            pregunta={preguntas[quest]}
+            setQuest={setQuest}
+            back={back}
+            continuar={continuar}
+            resetCount={resetCount}
+        />
     );
 };
 

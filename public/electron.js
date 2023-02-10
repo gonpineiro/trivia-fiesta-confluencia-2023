@@ -16,8 +16,10 @@ function createWindow() {
         titleBarOverlay: false,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        icon: './icon.ico'
     });
+    win.maximize();
 
     Menu.setApplicationMenu(null);
 
