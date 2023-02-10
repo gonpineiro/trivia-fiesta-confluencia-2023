@@ -93,10 +93,10 @@ $widthQuest: 560px;
         align-items: center;
         font-size: 45px;
         width: 450px;
-        height: 110px;
+        height: 90px;
         color: white;
         margin-bottom: 60px;
-        border-radius: 30px;
+        border-radius: 19px;
     }
 
     .btn_siguente {
@@ -106,11 +106,10 @@ $widthQuest: 560px;
         align-items: center;
         font-size: 45px;
         width: 450px;
-        height: 110px;
+        height: 73px;
         color: white;
-
-        margin-bottom: 200px;
-        border-radius: 30px;
+        margin-bottom: 42px;
+        border-radius: 18px;
     }
 
     .btn_shadow {
@@ -130,7 +129,7 @@ $widthQuest: 560px;
     }
 
     .quest_correcta {
-        font-size: 50px !important;
+        font-size: 49px !important;
         margin-bottom: 40px !important;
         text-align: left !important;
     }
@@ -166,15 +165,14 @@ $widthQuest: 560px;
         background-image: url('../assets/img/respuesta-2.png');
     }
     .quest_descripcion_img-3 {
-        background-image: url('../assets/img/respuesta-1.png');
+        background-image: url('../assets/img/respuesta-3.png');
     }
     .quest_descripcion_img-4 {
         background-image: url('../assets/img/respuesta-4.png');
     }
     .quest_descripcion_img-5 {
-        background-image: url('../assets/img/respuesta-1.png');
+        background-image: url('../assets/img/respuesta-5.png');
     }
-
 
     .quest_fin {
         display: flex;

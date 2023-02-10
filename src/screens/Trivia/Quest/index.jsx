@@ -43,16 +43,16 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
             )}
 
             {state === 'd' && (
-                <>
-                    <div className="quest_des_container">
-                        <p className="quest_descripcion quest_correcta">
-                            Respuesta correcta: {preg.correcta}
-                        </p>
-                        {preg.description.map((e) => (
-                            <p className="quest_descripcion"> • {e}</p>
-                        ))}
-                        <span className={`quest_descripcion_img quest_descripcion_img-${preg.number}`}></span>
-                    </div>
+                <div className="quest_des_container">
+                    <p className="quest_descripcion quest_correcta">
+                        Respuesta correcta: {preg.correcta}
+                    </p>
+                    {preg.description.map((e) => (
+                        <p className="quest_descripcion"> • {e}</p>
+                    ))}
+                    <span
+                        className={`quest_descripcion_img quest_descripcion_img-${preg.number}`}
+                    ></span>
                     <span
                         className="btn_siguente btn_shadow"
                         style={{ backgroundColor: preg.color }}
@@ -60,7 +60,7 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
                     >
                         Siguiente
                     </span>
-                </>
+                </div>
             )}
 
             {state === 'f' && (
