@@ -15,7 +15,9 @@ const Trivia = ({ setScreen, resetCount }) => {
         if (quest === 'uno') setQuest('dos');
         if (quest === 'dos') setQuest('tres');
         if (quest === 'tres') setQuest('cuatro');
-        if (quest === 'cuatro') setQuest('uno');
+        if (quest === 'cuatro') setQuest('cinco');
+
+        if (quest === 'cinco') setQuest('uno');
     };
 
     return (

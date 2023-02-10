@@ -88,6 +88,28 @@ const preguntas = {
         description:
             ['Ingresando en www.neuquencapital.gov.ar pódes conocer todos los medios de pago.'],
     },
+
+    cinco: {
+        number: 5,
+        quest: '¿Cuántas cámaras en vivo tiene la Ciudad?',
+        respuestas: [
+            {
+                respuesta: '3',
+            },
+            {
+                respuesta: '6',
+            },
+            {
+                respuesta: '9',
+            },
+        ],
+        correcta: '9',
+
+        color: '#ff1200',
+
+        description:
+            ['Ingresando en www.neuquencapital.gov.ar pódes conocer todos los medios de pago.'],
+    },
 };
 
 export default preguntas
