@@ -51,7 +51,7 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
                         {preg.description.map((e) => (
                             <p className="quest_descripcion"> • {e}</p>
                         ))}
-                        <span className="quest_descripcion_img"></span>
+                        <span className={`quest_descripcion_img quest_descripcion_img-${preg.number}`}></span>
                     </div>
                     <span
                         className="btn_siguente btn_shadow"

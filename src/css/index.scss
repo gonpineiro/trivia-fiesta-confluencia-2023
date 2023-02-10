@@ -154,12 +154,27 @@ $widthQuest: 560px;
     .quest_descripcion_img {
         width: 487px;
         height: 325px;
-
-        background-image: url('../assets/img/respuesta.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .quest_descripcion_img-1 {
+        background-image: url('../assets/img/respuesta-1.png');
+    }
+    .quest_descripcion_img-2 {
+        background-image: url('../assets/img/respuesta-2.png');
+    }
+    .quest_descripcion_img-3 {
+        background-image: url('../assets/img/respuesta-1.png');
+    }
+    .quest_descripcion_img-4 {
+        background-image: url('../assets/img/respuesta-4.png');
+    }
+    .quest_descripcion_img-5 {
+        background-image: url('../assets/img/respuesta-1.png');
+    }
+
 
     .quest_fin {
         display: flex;
