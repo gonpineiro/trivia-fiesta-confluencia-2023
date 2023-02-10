@@ -48,7 +48,7 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
                             Respuesta correcta: {preg.correcta}
                         </p>
                         {preg.description.map((e) => (
-                            <p className="quest_descripcion"> * {e}</p>
+                            <p className="quest_descripcion"> • {e}</p>
                         ))}
                         <span className="quest_descripcion_img"></span>
                     </div>
