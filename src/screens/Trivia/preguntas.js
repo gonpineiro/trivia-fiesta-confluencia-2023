@@ -110,6 +110,55 @@ const preguntas = {
         description:
             ['Ingresando en www.neuquencapital.gov.ar pódes conocer todos los medios de pago.'],
     },
+
+    seis: {
+        number: 6,
+        quest: '¿Cuántas Reservas Naturales existen en la ciudad de Neuquén?',
+        respuestas: [
+            {
+                respuesta: '1',
+            },
+            {
+                respuesta: '5',
+            },
+            {
+                respuesta: '8',
+            },
+        ],
+        correcta: '7',
+
+        color: '#7b30d1',
+
+        description:
+            ['Las Reservas naturales son áreas protegidas que resguardan ambientes típicos de la región con su flora y fauna.'],
+    },
+
+    siete: {
+        number: 7,
+        quest: 'En la ciudad separamos nuestros residuos domiciliarios en húmedos y secos ¿Cuáles son residuos secos?',
+        respuestas: [
+            {
+                respuesta: 'Papel, cartón y vidrios.',
+            },
+            {
+                respuesta: 'Restos de comida y colillas <br> de cigarrillos.',
+            },
+            {
+                respuesta: 'Todas las anteriores',
+            },
+        ],
+
+        style: {
+            fontSize: '31px',
+            textAlign: 'center'
+        },
+        correcta: 'Papel, cartón y vidrios.',
+
+        color: '#7b30d1',
+
+        description:
+            ['Los residuos secos se sacan los días lunes y jueves, mientras que los residuos húmedos los días martes, miércoles, viernes, sábado y domingo.'],
+    },
 };
 
 export default preguntas

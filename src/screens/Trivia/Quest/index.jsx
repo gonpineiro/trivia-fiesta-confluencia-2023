@@ -32,12 +32,11 @@ const Quest = ({ pregunta: preg, back, continuar, resetCount }) => {
 
                     {preg.respuestas.map((r) => (
                         <span
-                            className="btn_opcion btn_shadow"
-                            style={{ backgroundColor: preg.color }}
+                            className={`btn_opcion btn_shadow`}
+                            dangerouslySetInnerHTML={{ __html: r.respuesta }}
+                            style={{ backgroundColor: preg.color, ...preg.style }}
                             onClick={selectOp}
-                        >
-                            {r.respuesta}
-                        </span>
+                        ></span>
                     ))}
                 </>
             )}

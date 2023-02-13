@@ -7,7 +7,7 @@ const Main = () => {
 
     const close = () => {
         setCount(count + 1);
-        if (count >= 3) {
+        if (count >= 5) {
             window.close();
         }
     };
